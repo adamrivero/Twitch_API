@@ -1,4 +1,9 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using Newtonsoft.Json;
+using System;
+using System.Net.Http;
+using Windows.Media.Core;
+using Windows.Media.Streaming.Adaptive;
+using Windows.UI.Xaml.Controls;
 
 namespace Twitch_API
 {

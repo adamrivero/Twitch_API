@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Twitch_API.View;
 using Windows.UI.Xaml.Navigation;
 
 namespace Twitch_API
@@ -66,7 +67,7 @@ namespace Twitch_API
                     // Если стек навигации не восстанавливается для перехода к первой странице,
                     // настройка новой страницы путем передачи необходимой информации в качестве параметра
                     // навигации
-                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                    rootFrame.Navigate(typeof(MainView), e.Arguments);
                 }
                 // Обеспечение активности текущего окна
                 Window.Current.Activate();

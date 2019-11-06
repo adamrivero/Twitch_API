@@ -1,6 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using GalaSoft.MvvmLight.Views;
+using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -10,25 +10,18 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using System.Web;
 using Twitch_API.Model;
-using System.Net;
+using Twitch_API.View;
+using Windows.Storage;
+using Windows.UI.Popups;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace Twitch_API.ViewModel
 {
     class MainViewModel : INotifyPropertyChanged
     {
         private AllInfo selectedInfo;
-        private string _login;
-        public string Login
-        {
-            get { return _login; }
-            set
-            {
-                _login = value;
-                OnPropertyChanged("Login");
-            }
-        }
         public AllInfo SelectedInfo
         {
             get { return selectedInfo; }
@@ -38,21 +31,22 @@ namespace Twitch_API.ViewModel
                 OnPropertyChanged("SelectedInfo");
             }
         }
-
         public ObservableCollection<AllInfo> allInfos { get; private set; }
-        public ICommand GetCommand { get; private set; }
-        public ICommand VideoCommand { get; private set; }
         public MainViewModel()
         {
             allInfos = new ObservableCollection<AllInfo>();
-            SelectedInfo = new AllInfo();
             //SelectedStream.StreamVideoUri = await Uri2Async("csruhub");
             GetStreams();
-            GetCommand = new DelegateCommand(GetStreams);
+            SelectedInfo = new AllInfo();
         }
-        private async void GetStreams(Object obj)
+        public async void ClickCommand(object sender, object parameter)
         {
-            await FindByLoginAsync();
+            ApplicationDataContainer localData = ApplicationData.Current.LocalSettings;
+            var arg = parameter as Windows.UI.Xaml.Controls.ItemClickEventArgs;
+            var item = arg.ClickedItem as Model.AllInfo;
+            var UserLogin = await GetUserInfoAsync(item.id);
+            localData.Values["User_login"] = UserLogin.data[0].login;
+            NavigateService.GoTo("Media");
         }
         private async void GetStreams()
         {
@@ -65,19 +59,15 @@ namespace Twitch_API.ViewModel
             var response = await httpClient.SendAsync(request);
             var result = await response.Content.ReadAsStringAsync();
             var streams = JsonConvert.DeserializeObject<StreamModel>(result);
-            foreach(var stream in streams.data)
+            foreach (var stream in streams.data)
             {
-                var users = await GetUserInfoAsync(stream.user_id);
                 var games = await GetGameInfoAsync(stream.game_id.ToString());
-                foreach (var user in users.data)
-                {
                     foreach (var game in games.data)
                     {
-                        string set_atr_size = game.box_art_url.Replace("{width}", "600");
-                        set_atr_size = set_atr_size.Replace("{height}", "675");
-                        allInfos.Add(new AllInfo { box_art_url = set_atr_size, game_name = game.name, streamVideoURI = await UriAsync(user.login), broadcaster_type = user.broadcaster_type, user_id = stream.user_id, description = user.description, display_name = user.display_name, email = user.email, game_id = stream.game_id, id = user.id, language = stream.language, login = user.login, offline_image_url = user.offline_image_url, profile_image_url = user.profile_image_url, started_at = stream.started_at, thumbnail_url = stream.thumbnail_url, title = stream.title, type = stream.type, user_name = stream.user_name, viewer_count = stream.viewer_count, view_count = user.view_count });
+                        string set_preview_size = stream.thumbnail_url.Replace("{width}", "350");
+                        set_preview_size = set_preview_size.Replace("{height}", "200");
+                        allInfos.Add(new AllInfo { thumbnail_url = set_preview_size, game_name = game.name, user_name = stream.user_name, viewer_count = stream.viewer_count, id = stream.user_id });
                     }
-                }
             }
         }
         private async Task<Uri> UriAsync(string login)
@@ -85,7 +75,7 @@ namespace Twitch_API.ViewModel
             using (var httpClient = new HttpClient())
             {
                 //WebUtility.UrlEncode(login);
-                
+
                 HttpRequestMessage request = new HttpRequestMessage(new HttpMethod("GET"), $"https://api.twitch.tv/api/channels/{login}/access_token?client_id=0pje11teayzq9z2najlxgdcc5d2dy1");
                 var response = await httpClient.SendAsync(request);
                 var result = await response.Content.ReadAsStringAsync();
@@ -112,31 +102,7 @@ namespace Twitch_API.ViewModel
             var json = JsonConvert.DeserializeObject<UserModel>(result);
             return json;
         }
-        public async Task FindByLoginAsync()
-        {
-            HttpClient httpClient = new HttpClient();
-            HttpRequestMessage request = new HttpRequestMessage(new HttpMethod("GET"), $"https://api.twitch.tv/helix/streams?user_login={Login}");
-            request.Headers.Add("Client-ID", "0pje11teayzq9z2najlxgdcc5d2dy1");
-            var response = await httpClient.SendAsync(request);
-            var result = await response.Content.ReadAsStringAsync();
-            var json = JsonConvert.DeserializeObject<StreamModel>(result);
-            allInfos.Clear();
-            foreach (var stream in json.data)
-            {
-                var users = await GetUserInfoAsync(stream.user_id);
-                var games = await GetGameInfoAsync(stream.game_id.ToString());
-                foreach (var user in users.data)
-                {
-                    foreach (var game in games.data)
-                    {
-                        string set_atr_size = game.box_art_url.Replace("{width}", "600");
-                        set_atr_size = set_atr_size.Replace("{height}", "675");
-                        allInfos.Add(new AllInfo { box_art_url = set_atr_size, game_name = game.name, streamVideoURI = await UriAsync(user.login), broadcaster_type = user.broadcaster_type, user_id = stream.user_id, description = user.description, display_name = user.display_name, email = user.email, game_id = stream.game_id, id = user.id, language = stream.language, login = user.login, offline_image_url = user.offline_image_url, profile_image_url = user.profile_image_url, started_at = stream.started_at, thumbnail_url = stream.thumbnail_url, title = stream.title, type = stream.type, user_name = stream.user_name, viewer_count = stream.viewer_count, view_count = user.view_count });
-                    }
-                }
-            }
-        }
-       public async Task<GameModel> GetGameInfoAsync(string gameID)
+        public async Task<GameModel> GetGameInfoAsync(string gameID)
         {
             HttpClient httpClient = new HttpClient();
             HttpRequestMessage request = new HttpRequestMessage(new HttpMethod("GET"), $"https://api.twitch.tv/helix/games?id={gameID}");
@@ -146,7 +112,6 @@ namespace Twitch_API.ViewModel
             var json = JsonConvert.DeserializeObject<GameModel>(result);
             return json;
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged([CallerMemberName]string prop = "")
         {

@@ -1,20 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="allInfos" />
+    <RootPropertyPathName Name="topGameModels" />
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Box_art_url" />
+    <RootPropertyPathName Name="streamModels" />
     <RootPropertyPathName Name="SelectedInfo" />
-    <RootPropertyPathName Name="game_name" />
-    <RootPropertyPathName Name="viewer_count" />
-    <RootPropertyPathName Name="user_name" />
-    <RootPropertyPathName Name="thumbnail_url" />
-    <RootPropertyPathName Name="view_count" />
+    <RootPropertyPathName Name="Game_name" />
+    <RootPropertyPathName Name="Viewer_count" />
+    <RootPropertyPathName Name="User_name" />
+    <RootPropertyPathName Name="Thumbnail_url" />
+    <RootPropertyPathName Name="SelectedMedia" />
+    <RootPropertyPathName Name="View_count" />
     <RootPropertyPathName Name="description" />
-    <RootPropertyPathName Name="title" />
-    <RootPropertyPathName Name="box_art_url" />
-    <RootPropertyPathName Name="streamVideoURI" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Atr_url" />
+    <RootPropertyPathName Name="Video_source" />
+    <RootPropertyPathName Name="HomeCommand" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
-    <RootType FullName="Windows.UI.Xaml.Application" />
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="Resources" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
       <RootProperty Name="DataContext" />
@@ -76,14 +83,6 @@
       <RootProperty Name="UpdateSourceTrigger" />
       <RootProperty Name="Mode" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
-      <RootProperty Name="EventName" />
-      <RootProperty Name="Actions" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
-      <RootProperty Name="MethodName" />
-      <RootProperty Name="TargetObject" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
     </RootType>
@@ -104,15 +103,24 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
+      <RootProperty Name="MethodName" />
+      <RootProperty Name="TargetObject" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
     </RootType>
     <RootType FullName="Twitch_API.View.MainView" />
     <RootType FullName="Twitch_API.ViewModel.MediaViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Background" />
       <RootProperty Name="OverflowButtonVisibility" />
+      <RootProperty Name="IsDynamicOverflowEnabled" />
       <RootProperty Name="PrimaryCommands" />
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Name" />
@@ -134,9 +142,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="Twitch_API.View.MediaView" />
   </Roots.RootTypes>

@@ -1,18 +1,69 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Twitch_API.Model
 {
-    class StreamModel
+    class StreamModel : INotifyPropertyChanged
     {
         public List<Datum> data { get; set; }
-        public Pagination pagination { get; set; }
+        private string user_name;
+        private int viewer_count;
+        private string thumbnail_url;
+        private string id;
+        private string game_name;
+        public string Game_name
+        {
+            get { return game_name; }
+            set
+            {
+                game_name = value;
+                OnPropertyChanged("Game_name");
+            }
+        }
+        public string Id
+        {
+            get { return id; }
+            set
+            {
+                id = value;
+                OnPropertyChanged("Id");
+            }
+        }
+        public string User_name
+        {
+            get { return user_name; }
+            set
+            {
+                user_name = value;
+                OnPropertyChanged("User_name");
+            }
+        }
+        public int Viewer_count
+        {
+            get { return viewer_count; }
+            set
+            {
+                viewer_count = value;
+                OnPropertyChanged("Viewer_count");
+            }
+        }
+        public string Thumbnail_url
+        {
+            get { return thumbnail_url; }
+            set
+            {
+                thumbnail_url = value;
+                OnPropertyChanged("Thumbnail_url");
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        public void OnPropertyChanged([CallerMemberName]string prop = "")
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(prop));
+        }
     }
     public class Datum
     {
@@ -33,4 +84,5 @@ namespace Twitch_API.Model
     {
         public string cursor { get; set; }
     }
+   
 }

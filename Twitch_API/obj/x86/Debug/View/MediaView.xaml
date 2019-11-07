@@ -21,14 +21,11 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <CommandBar Grid.Row="0" OverflowButtonVisibility="Collapsed">
-            <AppBarButton Icon="Home"></AppBarButton>
-            <CommandBar.Content>
-                <TextBox VerticalAlignment="Center" />
-            </CommandBar.Content>
+        <CommandBar Background="Purple" Grid.Row="0" OverflowButtonVisibility="Collapsed" IsDynamicOverflowEnabled="False">
+            <AppBarButton Icon="Home" Command="{Binding HomeCommand}"></AppBarButton>
         </CommandBar>
 
-        <ScrollViewer DataContext="{Binding SelectedInfo, Mode=TwoWay}" Height="auto" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2">
+        <ScrollViewer DataContext="{Binding SelectedMedia, Mode=TwoWay}" Height="auto" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2">
             <Grid Height="800">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="120"/>
@@ -44,7 +41,7 @@
                 </Grid.RowDefinitions>
                 <MediaElement x:ConnectionId='2' Name="MainMedia" 
                               AreTransportControlsEnabled="True"
-                              Source="{Binding streamVideoURI, UpdateSourceTrigger=PropertyChanged}"  
+                              Source="{Binding Video_source, UpdateSourceTrigger=PropertyChanged}"  
                               VerticalAlignment="Top" 
                               HorizontalAlignment="Left"
                               Grid.Row="0" Grid.ColumnSpan="3">
@@ -52,20 +49,20 @@
                         <MediaTransportControls IsCompact="True" IsCompactOverlayEnabled="True" IsSeekBarVisible="False" IsZoomButtonVisible="False" IsCompactOverlayButtonVisible="True"></MediaTransportControls>
                     </MediaElement.TransportControls>
                 </MediaElement>
-                <Image Source="{Binding box_art_url}" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" Margin="10" HorizontalAlignment="Left" Width="120" Height="180"/>
-                <TextBlock Margin="10" FontSize="16" Text="{Binding title}" Grid.Column="1" Grid.Row="1"/>
+                <Image Source="{Binding Atr_url}" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" Margin="10" HorizontalAlignment="Left" Width="120" Height="180"/>
+                <TextBlock Margin="10" FontSize="16" Text="{Binding Title}" Grid.Column="1" Grid.Row="1"/>
                 <TextBlock Margin="10" TextWrapping="Wrap" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Text="{Binding description}" Grid.Column="1" Grid.Row="2"/>
-                <TextBlock Margin="10" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right">
+                <TextBlock Margin="10" TextWrapping="Wrap" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Right">
                 <Run Text="Сейчас смотрит: "/>
-                <Run Text="{Binding viewer_count, UpdateSourceTrigger=PropertyChanged}"/>
+                <Run Text="{Binding Viewer_count, UpdateSourceTrigger=PropertyChanged}"/>
                 </TextBlock>
                 <TextBlock Margin="10" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Right">
                     <Run Text="Всего просмотров: "/>
-                    <Run Text="{Binding view_count, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Run Text="{Binding View_count, UpdateSourceTrigger=PropertyChanged}"/>
                 </TextBlock>
                 <TextBlock Margin="10" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left">
                     <Run Text="Играет в: "/>
-                    <Run Text="{Binding game_name, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Run Text="{Binding Game_name, UpdateSourceTrigger=PropertyChanged}"/>
                 </TextBlock>
             </Grid>
         </ScrollViewer>

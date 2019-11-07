@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Twitch_API.Model
 {
@@ -17,6 +13,7 @@ namespace Twitch_API.Model
         private string _broadcaster_type;
         private string _description;
         private string _profile_image_url;
+        private string _top_game_name;
         private string _offline_image_url;
         private int _view_count;
         private string _email;
@@ -31,6 +28,15 @@ namespace Twitch_API.Model
         private Uri _streamVideoURI;
         private string _game_name;
         private string _box_art_url;
+        public string top_game_name
+        {
+            get { return _top_game_name; }
+            set
+            {
+                _top_game_name = value;
+                OnPropertyChanged("top_game_name");
+            }
+        }
         public string id
         {
             get { return _id; }

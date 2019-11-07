@@ -19,9 +19,10 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
-                <TextBlock Margin="20,0,0,0" Text="Топ трансляции" VerticalAlignment="Center" FontWeight="SemiLight" FontSize="20"/>
-                <GridView ItemsSource="{Binding allInfos, UpdateSourceTrigger=PropertyChanged}"
+                <TextBlock Margin="20,0,0,0" Text="Популярные трансляции" VerticalAlignment="Center" FontWeight="SemiLight" FontSize="20"/>
+                <GridView ItemsSource="{Binding streamModels, UpdateSourceTrigger=PropertyChanged}"
                   IsItemClickEnabled="True"
                   IsSwipeEnabled="true"
                   SelectionMode="Single"
@@ -52,11 +53,42 @@
                                     <RowDefinition/>
                                     <RowDefinition/>
                                 </Grid.RowDefinitions>
-                                <Image Grid.Row="0" Margin="2" Grid.ColumnSpan="2" Source="{Binding thumbnail_url}"/>
-                                <TextBlock Grid.Row="1" Text="{Binding user_name}"/>
+                                <Image Grid.Row="0" Margin="2" Grid.ColumnSpan="2" Source="{Binding Thumbnail_url}"/>
+                                <TextBlock Grid.Row="1" Text="{Binding User_name}"/>
                                 <SymbolIcon Grid.Column="2" Grid.Row="1" Symbol="Contact"/>
-                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding viewer_count}" HorizontalAlignment="Right"/>
-                                <TextBlock Grid.Row="2" Text="{Binding game_name}"/>
+                                <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding Viewer_count}" HorizontalAlignment="Right"/>
+                                <TextBlock Grid.Row="2" Text="{Binding Game_name}"/>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+                <TextBlock Grid.Row="2" Margin="20,0,0,0" Text="Популярные категории" VerticalAlignment="Top" FontWeight="SemiLight" FontSize="20"/>
+                <GridView ItemsSource="{Binding topGameModels, UpdateSourceTrigger=PropertyChanged}"
+                  IsItemClickEnabled="True"
+                  IsSwipeEnabled="true"
+                  SelectionMode="Single"
+                  Grid.Row="2"
+                  ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                  HorizontalAlignment="Center">
+                    <GridView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapGrid Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </GridView.ItemsPanel>
+                    <GridView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Width="140" Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="200"/>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Row="0" Margin="2" Grid.ColumnSpan="2" Source="{Binding Box_art_url}"/>
+                                <TextBlock Grid.Row="1" Text="{Binding  Name}"/>
                             </Grid>
                         </DataTemplate>
                     </GridView.ItemTemplate>

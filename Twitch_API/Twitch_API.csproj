@@ -116,16 +116,19 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ApiRequest.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="Model\AllInfo.cs" />
     <Compile Include="Model\GameModel.cs" />
+    <Compile Include="Model\MediaModel.cs" />
     <Compile Include="Model\StreamModel.cs" />
-    <Compile Include="Model\MainModel.cs" />
+    <Compile Include="Model\ToGamesModel.cs" />
     <Compile Include="Model\UserModel.cs" />
     <Compile Include="Model\VideoModel.cs" />
+    <Compile Include="Model\VideoURIModel.cs" />
     <Compile Include="NavigateService.cs" />
     <Compile Include="ViewModel\MediaViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />

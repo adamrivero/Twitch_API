@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-06T12:34:58.274</Modified>
+      <Modified>2019-11-07T08:11:52.356</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Twitch_API.exe">
       <PackagePath>entrypoint\Twitch_API.exe</PackagePath>
-      <Modified>2019-11-06T12:34:57.018</Modified>
+      <Modified>2019-11-07T08:11:50.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Listiev\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -1354,19 +1354,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Twitch_API.xr.xml">
       <PackagePath>Twitch_API.xr.xml</PackagePath>
-      <Modified>2019-11-06T12:34:56.804</Modified>
+      <Modified>2019-11-07T07:53:25.353</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-06T12:13:54.725</Modified>
+      <Modified>2019-11-07T08:11:50.495</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\View\MainView.xbf">
       <PackagePath>View\MainView.xbf</PackagePath>
-      <Modified>2019-11-06T12:34:56.814</Modified>
+      <Modified>2019-11-07T08:11:50.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\View\MediaView.xbf">
       <PackagePath>View\MediaView.xbf</PackagePath>
-      <Modified>2019-11-06T12:13:54.725</Modified>
+      <Modified>2019-11-07T08:11:50.498</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1374,11 +1374,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-06T11:19:40.934</Modified>
+      <Modified>2019-11-07T08:11:51.403</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Core\Twitch_API.exe">
       <PackagePath>Twitch_API.exe</PackagePath>
-      <Modified>2019-11-06T12:34:58.270</Modified>
+      <Modified>2019-11-07T08:11:52.352</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -7,6 +7,12 @@ namespace Twitch_API.View
         public MediaView()
         {
             this.InitializeComponent();
+            DataContext = new TwitchViewModel.MediaViewModel();
+        }
+
+        private void AppBarButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainView));
         }
     }
 }

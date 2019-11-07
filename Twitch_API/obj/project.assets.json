@@ -363,6 +363,35 @@
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
         }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
@@ -905,6 +934,35 @@
         "type": "package",
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
+        }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
         }
       }
     },
@@ -1450,6 +1508,35 @@
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
         }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
@@ -1994,6 +2081,35 @@
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
         }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
@@ -2536,6 +2652,35 @@
         "type": "package",
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
+        }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
         }
       }
     },
@@ -3081,6 +3226,35 @@
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
         }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        }
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
@@ -3623,6 +3797,35 @@
         "type": "package",
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
+        }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
         }
       }
     },
@@ -4167,6 +4370,35 @@
         "type": "package",
         "build": {
           "build/VideoLAN.LibVLC.UWP.targets": {}
+        }
+      },
+      "TwitchModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "compile": {
+          "bin/placeholder/TwitchModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchModel.dll": {}
+        }
+      },
+      "TwitchViewModel/1.0.0": {
+        "type": "project",
+        "framework": "UAP,Version=v10.0.16299",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.2.9",
+          "MvvmLightLibs": "5.4.1.1",
+          "TwitchModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/TwitchViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/TwitchViewModel.dll": {}
         }
       }
     }
@@ -10081,6 +10313,16 @@
         "videolan.libvlc.uwp.3.2.0.nupkg.sha512",
         "videolan.libvlc.uwp.nuspec"
       ]
+    },
+    "TwitchModel/1.0.0": {
+      "type": "project",
+      "path": "../TwitchModel/TwitchModel.csproj",
+      "msbuildProject": "../TwitchModel/TwitchModel.csproj"
+    },
+    "TwitchViewModel/1.0.0": {
+      "type": "project",
+      "path": "../TwitchViewModel/TwitchViewModel.csproj",
+      "msbuildProject": "../TwitchViewModel/TwitchViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -10089,6 +10331,7 @@
       "Microsoft.Xaml.Behaviors.Uwp.Managed >= 2.0.1",
       "MvvmLight >= 5.4.1.1",
       "Newtonsoft.Json >= 12.0.2",
+      "TwitchViewModel >= 1.0.0",
       "VideoLAN.LibVLC.UWP >= 3.2.0"
     ]
   },
@@ -10122,7 +10365,11 @@
       },
       "frameworks": {
         "uap10.0.17763": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\Twitch_API\\TwitchViewModel\\TwitchViewModel.csproj": {
+              "projectPath": "D:\\Projects\\Twitch_API\\TwitchViewModel\\TwitchViewModel.csproj"
+            }
+          }
         }
       }
     },

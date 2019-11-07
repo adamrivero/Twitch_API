@@ -372,3 +372,11 @@ D:\Projects\Twitch_API\Twitch_API\obj\x86\Debug\View\MediaView.xaml
 D:\Projects\Twitch_API\Twitch_API\obj\x86\Debug\View\MainView.xaml
 D:\Projects\Twitch_API\Twitch_API\obj\x86\Debug\View\MediaView.xbf
 D:\Projects\Twitch_API\Twitch_API\obj\x86\Debug\View\MainView.xbf
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchViewModel.dll
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchAPIlibrary.dll
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchModel.dll
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchViewModel.pdb
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchViewModel.pri
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchAPIlibrary.pdb
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchModel.pdb
+D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\TwitchModel.pri

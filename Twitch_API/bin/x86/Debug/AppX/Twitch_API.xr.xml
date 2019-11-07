@@ -16,7 +16,6 @@
     <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="Atr_url" />
     <RootPropertyPathName Name="Video_source" />
-    <RootPropertyPathName Name="HomeCommand" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -24,11 +23,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Background" />
-      <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
-    <RootType FullName="Twitch_API.ViewModel.MainViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Children" />
       <RootProperty Name="RowDefinitions" />
@@ -74,6 +71,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="ItemTemplate" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -115,7 +113,6 @@
       <RootProperty Name="Symbol" />
     </RootType>
     <RootType FullName="Twitch_API.View.MainView" />
-    <RootType FullName="Twitch_API.ViewModel.MediaViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
       <RootProperty Name="Background" />
       <RootProperty Name="OverflowButtonVisibility" />
@@ -142,7 +139,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
-      <RootProperty Name="Command" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Twitch_API.View.MediaView" />
   </Roots.RootTypes>

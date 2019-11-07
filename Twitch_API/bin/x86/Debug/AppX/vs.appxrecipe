@@ -30,13 +30,13 @@
     <AppXManifest Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-07T08:11:52.356</Modified>
+      <Modified>2019-11-07T13:02:49.899</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Twitch_API.exe">
       <PackagePath>entrypoint\Twitch_API.exe</PackagePath>
-      <Modified>2019-11-07T08:11:50.766</Modified>
+      <Modified>2019-11-07T13:02:48.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Listiev\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
       <PackagePath>CommonServiceLocator.dll</PackagePath>
@@ -70,47 +70,59 @@
       <PackagePath>System.Runtime.dll</PackagePath>
       <Modified>2019-07-22T11:01:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\Twitch_API\TwitchViewModel\bin\x86\Debug\TwitchViewModel.dll">
+      <PackagePath>TwitchViewModel.dll</PackagePath>
+      <Modified>2019-11-07T13:02:41.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\Twitch_API\TwitchViewModel\bin\x86\Debug\TwitchAPIlibrary.dll">
+      <PackagePath>TwitchAPIlibrary.dll</PackagePath>
+      <Modified>2019-11-07T12:11:29.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Projects\Twitch_API\TwitchViewModel\bin\x86\Debug\TwitchModel.dll">
+      <PackagePath>TwitchModel.dll</PackagePath>
+      <Modified>2019-11-07T13:00:50.590</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
       <Modified>2019-03-18T15:36:56.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-11-01T10:07:06.851</Modified>
+      <Modified>2019-11-07T10:50:31.416</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.404</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-10-15T10:57:49.999</Modified>
+      <Modified>2019-11-07T10:50:31.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Listiev\.nuget\packages\videolan.libvlc.uwp\3.2.0\build\win10-x86\libvlc.dll">
       <PackagePath>libvlc.dll</PackagePath>
@@ -1354,19 +1366,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Twitch_API.xr.xml">
       <PackagePath>Twitch_API.xr.xml</PackagePath>
-      <Modified>2019-11-07T07:53:25.353</Modified>
+      <Modified>2019-11-07T13:00:59.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-07T08:11:50.495</Modified>
+      <Modified>2019-11-07T13:02:48.365</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\View\MainView.xbf">
       <PackagePath>View\MainView.xbf</PackagePath>
-      <Modified>2019-11-07T08:11:50.498</Modified>
+      <Modified>2019-11-07T13:02:48.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\View\MediaView.xbf">
       <PackagePath>View\MediaView.xbf</PackagePath>
-      <Modified>2019-11-07T08:11:50.498</Modified>
+      <Modified>2019-11-07T13:02:48.366</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1374,11 +1386,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-07T08:11:51.403</Modified>
+      <Modified>2019-11-07T13:01:00.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Projects\Twitch_API\Twitch_API\bin\x86\Debug\Core\Twitch_API.exe">
       <PackagePath>Twitch_API.exe</PackagePath>
-      <Modified>2019-11-07T08:11:52.352</Modified>
+      <Modified>2019-11-07T13:02:49.893</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

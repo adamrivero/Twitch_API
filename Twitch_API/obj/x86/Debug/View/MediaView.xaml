@@ -8,9 +8,7 @@
     xmlns:vm="using:Twitch_API.ViewModel"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
-        <vm:MediaViewModel/>
-    </Page.DataContext>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -22,7 +20,7 @@
         </Grid.RowDefinitions>
 
         <CommandBar Background="Purple" Grid.Row="0" OverflowButtonVisibility="Collapsed" IsDynamicOverflowEnabled="False">
-            <AppBarButton Icon="Home" Command="{Binding HomeCommand}"></AppBarButton>
+            <AppBarButton x:ConnectionId='3' Icon="Home"                            ></AppBarButton>
         </CommandBar>
 
         <ScrollViewer DataContext="{Binding SelectedMedia, Mode=TwoWay}" Height="auto" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2">

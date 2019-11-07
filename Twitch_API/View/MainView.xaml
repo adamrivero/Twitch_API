@@ -5,14 +5,11 @@
     xmlns:local="using:Twitch_API.View"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:vm="using:Twitch_API.ViewModel"
+    xmlns:vm="using:TwitchViewModel"
     xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
     xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-    <Page.DataContext>
-        <vm:MainViewModel/>
-    </Page.DataContext>
     <Grid>
         <ScrollViewer>
             <Grid>
@@ -29,7 +26,7 @@
                   Grid.Row="1"
                   ScrollViewer.VerticalScrollBarVisibility="Hidden"
                   SelectedItem="{Binding SelectedInfo, Mode=TwoWay}"
-                  HorizontalAlignment="Center">
+                  HorizontalAlignment="Center" ItemClick="GridView_ItemClick">
                     <Interactivity:Interaction.Behaviors>
                         <Core:EventTriggerBehavior EventName="ItemClick">
                             <Core:CallMethodAction MethodName="ClickCommand"

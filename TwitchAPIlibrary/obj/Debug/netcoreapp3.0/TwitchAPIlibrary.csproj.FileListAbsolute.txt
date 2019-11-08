@@ -1,8 +1,0 @@
-D:\Projects\Twitch_API\TwitchAPIlibrary\bin\Debug\netcoreapp3.0\TwitchAPIlibrary.deps.json
-D:\Projects\Twitch_API\TwitchAPIlibrary\bin\Debug\netcoreapp3.0\TwitchAPIlibrary.dll
-D:\Projects\Twitch_API\TwitchAPIlibrary\bin\Debug\netcoreapp3.0\TwitchAPIlibrary.pdb
-D:\Projects\Twitch_API\TwitchAPIlibrary\obj\Debug\netcoreapp3.0\TwitchAPIlibrary.csprojAssemblyReference.cache
-D:\Projects\Twitch_API\TwitchAPIlibrary\obj\Debug\netcoreapp3.0\TwitchAPIlibrary.AssemblyInfoInputs.cache
-D:\Projects\Twitch_API\TwitchAPIlibrary\obj\Debug\netcoreapp3.0\TwitchAPIlibrary.AssemblyInfo.cs
-D:\Projects\Twitch_API\TwitchAPIlibrary\obj\Debug\netcoreapp3.0\TwitchAPIlibrary.dll
-D:\Projects\Twitch_API\TwitchAPIlibrary\obj\Debug\netcoreapp3.0\TwitchAPIlibrary.pdb

@@ -1,3 +1,0 @@
-D:\Projects\Twitch_API\Twitch_API\Twitch_API.csproj;x86
-D:\Projects\Twitch_API\TwitchModel\TwitchModel.csproj;x86
-D:\Projects\Twitch_API\TwitchViewModel\TwitchViewModel.csproj;x86
